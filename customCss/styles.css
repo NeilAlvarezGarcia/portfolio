@@ -1,0 +1,167 @@
+body {
+  background-color: #f1f1f1;
+}
+
+/* links header */
+.links {
+  color: #fff;
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+.links:hover {
+  color: #2780e3;
+  text-decoration: underline;
+}
+
+.tecnologies a:hover svg {
+  transform: scale(1.6);
+}
+.tecnologies a.html:hover svg {
+  fill: #e34c26;
+  background-color: #fff;
+}
+.tecnologies a.css:hover svg {
+  fill: #264de4;
+  background-color: #fff;
+}
+.tecnologies a.sass:hover svg {
+  fill: #cc6699;
+  background-color: #fff;
+}
+.tecnologies a.jvs:hover svg {
+  fill: #f0db4f;
+}
+.tecnologies a.react:hover svg {
+  fill: #61dbfb;
+}
+.tecnologies a.git:hover svg {
+  fill: #f1502f;
+}
+.tecnologies a svg {
+  fill: #fff;
+  transform: scale(1.3);
+  transition: all ease 0.3s;
+}
+
+/* portrait */
+.portrait img {
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+}
+.portrait img:hover {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* skills */
+.increase {
+  position: relative;
+  transition: all ease 0.5s;
+}
+.increase p {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: #000;
+  font-size: 13px;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+.increase:hover {
+  transform: scale(1.05);
+}
+.increase:hover p {
+  opacity: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.project {
+  transition: all 0.2s ease;
+  height: 20rem;
+}
+.project:hover {
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+.project .des {
+  height: 45%;
+}
+.project .tec {
+  height: 20%;
+}
+.buttons-links {
+  gap: 10px;
+}
+
+.redes a {
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  transition: all 0.3s ease;
+}
+.redes a:hover {
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.3);
+}
+.redes a svg {
+  transform: scale(1.5);
+}
+.redes a.linkedin svg {
+  fill: #0072b1;
+}
+.redes a.github svg {
+  fill: #171515;
+}
+.redes a.facebook svg {
+  fill: #4267b2;
+}
+
+/* medias queries */
+@media (max-width: 1400px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .project {
+    height: 25rem;
+  }
+  .project .des {
+    height: 37%;
+  }
+}
+@media (max-width: 990px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .project {
+    height: 20rem;
+  }
+  .project .des {
+    height: 45%;
+  }
+}
+@media (max-width: 575px) {
+  .project {
+    height: 25rem;
+  }
+  .project .des {
+    height: 37%;
+  }
+}
+@media (max-width: 333px) {
+  .project {
+    height: 30rem;
+  }
+  .project .tec {
+    margin-bottom: 35px;
+  }
+}
