@@ -74,7 +74,7 @@ export const projects = [
   },
   {
     id: id++,
-    name: "Websites cacher",
+    name: "Websites catcher",
     tecnologies: ["html", "Bootswatch", "reactjs", "firebase"],
     description:
       "A website catcher that allows you to save the name and link of the websites you might need to keep.",
