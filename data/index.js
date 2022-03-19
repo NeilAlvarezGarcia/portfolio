@@ -59,7 +59,7 @@ export const projects = [
     name: "Expense Manager",
     tecnologies: ["html", "css", "typescript"],
     description:
-      "A expense wallet manager that helps you keep present how much money you spend on the day or with some responsabilities.",
+      "An expense wallet manager that helps you keep present how much money you spend on the day or with some responsabilities.",
     repo_url: "https://github.com/NeilAlvarezGarcia/ExpensesManager",
     view_url: "https://managerexpenses.netlify.app/",
   },

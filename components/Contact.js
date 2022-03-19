@@ -46,11 +46,12 @@ const Header = () => {
                 </a>
               </div>
               <a
-                href="#contact"
+                href="/NEILCV.pdf"
+                target="_blank"
+                rel="noreferrer"
                 className="btn btn-outline-primary rounded"
-                download="/NEILCV.pdf"
               >
-                Download CV
+                Take a look my CV
               </a>
             </div>
           </div>
