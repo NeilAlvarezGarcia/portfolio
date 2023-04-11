@@ -56,8 +56,8 @@ const SocialMediaContainer = styled.div`
 
 const SocialMediaBtn = styled.a`
   ${FLEX_ROW}
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   background-color: transparent;
   ${border}
   border-radius: 50%;

@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 import { IconProps } from "@/utils/interfaces/IconProps";
 
-const LinkTo: FC<IconProps> = ({ size = 20, color = "#1f242d" }) => {
+const LinkTo: FC<IconProps> = ({ size = 18, color = "#1f242d" }) => {
   return (
     <svg width={size} height={size} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
       <path

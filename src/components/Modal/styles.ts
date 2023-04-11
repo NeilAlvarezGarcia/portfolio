@@ -1,6 +1,8 @@
-import { clipPath, FLEX_ROW, transition } from "@/styles/commonStyles";
 import styled from "styled-components";
-import { Section } from "../styledComponents";
+
+import { clipPath, FLEX_ROW, mainBtn, transition } from "@/styles/commonStyles";
+import { Container, Section } from "../styledComponents";
+import { COLORS } from "@/styles/colors";
 
 const ModalSection = styled(Section)<{ active: boolean }>`
   ${({ active }) => clipPath(active)}
@@ -15,4 +17,22 @@ const ModalSection = styled(Section)<{ active: boolean }>`
   ${FLEX_ROW}
 `;
 
-export { ModalSection };
+const ModalContainer = styled(Container)`
+  background-color: ${COLORS.secondBgColor};
+  border-radius: 2rem;
+  height: 85vh;
+  padding: 0;
+  ${FLEX_ROW}
+`;
+
+const CloseBtn = styled.button`
+  ${mainBtn}
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`;
+
+export { ModalSection, ModalContainer, CloseBtn };

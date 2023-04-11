@@ -1,25 +1,31 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 
 import ArrowUp from "@/icons/ArrowUp";
 
-import { ModalSection } from "./styles";
+import { CloseBtn, ModalContainer, ModalSection } from "./styles";
 
-const Modal: FC<{ children: JSX.Element }> = ({ children }) => {
+interface Props {
+  active: boolean;
+  close: () => void;
+  children: JSX.Element;
+}
+
+const Modal: FC<Props> = ({ active, close, children }) => {
+  useEffect(() => {
+    if (active) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+  }, [active]);
+
   return (
-    <ModalSection
-      active={false}
-      // className={`${styles.modal} ${modalOpen && styles.active}`}
-      // onClick={() => setModalOpen(false)}
-    >
-      <div onClick={(e) => e.stopPropagation()} style={{ position: "relative" }}>
+    <ModalSection active={active} onClick={close}>
+      <ModalContainer onClick={(e) => e.stopPropagation()} style={{ position: "relative" }}>
         {children}
-        <button
-        // className={styles.btn} onClick={() => setModalOpen(false)}
-        >
+
+        <CloseBtn onClick={close}>
           <ArrowUp />
           Close
-        </button>
-      </div>
+        </CloseBtn>
+      </ModalContainer>
     </ModalSection>
   );
 };
