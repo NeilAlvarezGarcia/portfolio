@@ -3,10 +3,11 @@ import React, { FC } from "react";
 import { ProjectContent } from "@/utils/interfaces/projectType";
 
 import CustomeImage from "@/components/CustomeImage";
-import LinkTo from "@/icons/LinkTo";
 
 import { ProjectCardContainer, ProjectCardContent, ProjectCardLink } from "../styles";
-import { P, SubTitle } from "@/components/styledComponents";
+import { SubTitle } from "@/components/styledComponents";
+import Github from "@/icons/Github";
+import { COLORS } from "@/styles/colors";
 
 interface Props {
   content: ProjectContent;
@@ -20,10 +21,10 @@ const ProjectCard: FC<Props> = ({ content, image }) => {
 
       <ProjectCardContent>
         <SubTitle>{content.title}</SubTitle>
-        <P>{content.description}</P>
 
         <ProjectCardLink href={content.link} target='_blank' style={{}}>
-          <LinkTo />
+          Repository
+          <Github color={COLORS.black} />
         </ProjectCardLink>
       </ProjectCardContent>
     </ProjectCardContainer>

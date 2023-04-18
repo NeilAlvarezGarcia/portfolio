@@ -4,7 +4,7 @@ import { COLORS } from "@/styles/colors";
 import { FLEX_COLUMN, FLEX_ROW, mainBtn, transition } from "@/styles/commonStyles";
 import { mdScreen, setMediaQueryWidth, lgScreen, setMediaQueryHeight } from "@/styles/mediaQueries";
 
-import { Container } from "../styledComponents";
+import { Container, SubTitle } from "../styledComponents";
 
 const inputStyles = css`
   border-radius: 1rem;
@@ -75,23 +75,30 @@ const EmailBtn = styled.button`
 const FormContainer = styled.div`
   ${FLEX_COLUMN}
   align-items: center;
-  width: 90%;
-  max-width: 60rem;
-  max-height: 80%;
+  max-height: 85%;
+  width: 100%;
   gap: 1rem;
 
   h2 {
     text-align: center;
+    padding: 0 1rem;
   }
+`;
+
+const ScrollableDiv = styled.div`
+  ${FLEX_ROW}
+  align-items: flex-start;
+  width: 100%;
+  overflow-y: auto;
+  padding-bottom: 2rem;
 `;
 
 const FormStyled = styled.form`
   ${FLEX_COLUMN}
-  justify-content: flex-start;
   align-items: unset;
-  gap: 3rem;
-  width: 100%;
-  overflow-y: auto;
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 60rem;
 `;
 
 const Group = styled.div`
@@ -104,6 +111,7 @@ const GroupLabel = styled.label`
   color: ${COLORS.mainColor};
   font-size: 1.8rem;
   font-weight: 600;
+  text-transform: capitalize;
 `;
 
 const GroupInput = styled.input`
@@ -112,10 +120,8 @@ const GroupInput = styled.input`
 
 const GroupTextArea = styled.textarea`
   ${inputStyles}
-  max-height: 10rem;
+  height: 15rem;
   resize: none;
-
-  ${setMediaQueryHeight("837px", "max-height: unset;")}
 `;
 
 const SubmitButton = styled.button`
@@ -128,16 +134,27 @@ const SubmitButton = styled.button`
   font-size: 1.6rem;
   text-transform: uppercase;
   cursor: pointer;
-  ${transition}
-
-  &:hover {
-    box-shadow: 0 0 1rem ${COLORS.white};
-  }
 
   ${mdScreen(`
     padding: 1.2rem 2rem;    
     margin: 0 auto;
   `)}
+`;
+
+const ErrorText = styled.p<{ visible: boolean }>`
+  color: ${COLORS.red};
+  font-size: 1.2rem;
+  opacity: 0;
+  ${transition}
+
+  ${({ visible }) => visible && "opacity: 1;"}
+`;
+
+const SuccessText = styled(SubTitle)`
+  color: ${COLORS.green};
+  padding: 0 3rem;
+  max-width: 50rem;
+  line-height: 1.5;
 `;
 
 export {
@@ -154,4 +171,7 @@ export {
   GroupInput,
   GroupTextArea,
   SubmitButton,
+  ErrorText,
+  ScrollableDiv,
+  SuccessText,
 };

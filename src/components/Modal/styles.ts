@@ -20,7 +20,7 @@ const ModalSection = styled(Section)<{ active: boolean }>`
 const ModalContainer = styled(Container)`
   background-color: ${COLORS.secondBgColor};
   border-radius: 2rem;
-  height: 85vh;
+  height: 90vh;
   padding: 0;
   ${FLEX_ROW}
 `;

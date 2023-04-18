@@ -25,14 +25,28 @@ const About = forwardRef<Ref, Props>(({ changeSection }, ref) => {
             About <span>Me</span>
           </SubTitle>
           <SubTitle2>FullStack Developer</SubTitle2>
-          <P>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad cum neque, numquam
-            temporibus necessitatibus dolores, maxime debitis quasi quisquam odio saepe incidunt
-            voluptate similique eum suscipit! Facilis, dolores perspiciatis. Soluta reiciendis in
-            similique. Pariatur id minima, vitae rerum nam ipsa. Voluptatum doloremque rem harum
-            omnis culpa unde aut laboriosam dolor incidunt impedit, quos quasi. Facilis nobis
-            reprehenderit aut atque!
-          </P>
+          <div>
+            <P>
+              I'm a highly skilled Full-Stack Developer with several years of experience in the
+              software development industry. I have extensive knowledge of frontend and backend
+              technologies.
+            </P>
+            <P>
+              I have recently worked with great teams in companies such as WebRun, GreenRun,
+              Univision, and Controles Empresariales, where I had the opportunity to learn from
+              partners with extensive experience in the software industry. They taught me a lot of
+              things, and I am grateful for the opportunity to work with such knowledgeable
+              individuals.
+            </P>
+            <P>
+              I'm the kind of guy who always strives to improve his skills and stay up-to-date with
+              the latest technologies and industry trends.
+            </P>
+            <P>
+              I also enjoy cycling through scenic routes, practicing low-impact endurance training
+              by swimming, and building strength and endurance through regular workout routines.
+            </P>
+          </div>
 
           <AboutBtn onClick={changeSection}>Read more</AboutBtn>
         </AboutContent>

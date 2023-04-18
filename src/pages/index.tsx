@@ -2,6 +2,8 @@ import { createRef, useEffect, useState } from "react";
 
 import Head from "next/head";
 
+import { Ref } from "@/utils/interfaces/refType";
+
 import { activeTypes } from "@/utils/interfaces/activeSectionTypes";
 
 import { Header } from "@/components/Home/styles";
@@ -13,14 +15,14 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Portfolio() {
-  const homeRef = createRef<HTMLElement>();
-  const aboutRef = createRef<HTMLElement>();
-  const stackTechRef = createRef<HTMLElement>();
-  const contactRef = createRef<HTMLElement>();
+  const homeRef = createRef<Ref>();
+  const aboutRef = createRef<Ref>();
+  const stackTechRef = createRef<Ref>();
+  const contactRef = createRef<Ref>();
 
   const [activeSection, setActiveSection] = useState<activeTypes>(activeTypes.home);
 
-  const scrollInto = (element: HTMLElement) => {
+  const scrollInto = (element: Ref) => {
     element.scrollIntoView({
       behavior: "smooth",
       block: document.body.clientWidth >= 768 ? "center" : "start",
@@ -57,7 +59,7 @@ export default function Portfolio() {
           <Home />
         </Header>
 
-        <About ref={aboutRef} changeSection={() => setActiveSection(activeTypes.stack)} />
+        <About ref={aboutRef} changeSection={() => scrollInto(stackTechRef.current!)} />
 
         <Stack ref={stackTechRef} />
 

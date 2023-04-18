@@ -1,38 +1,26 @@
 export const backendProjects = [
   {
     title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-          exercitationem deserunt minus nihil, enim eligendi a.`,
     link: "https://github.com/NeilAlvarezGarcia/github-searcher",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-          exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Users API",
+    link: "https://github.com/NeilAlvarezGarcia/node-graphql",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-          exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Node Docker",
+    link: "https://github.com/NeilAlvarezGarcia/docker-node-mongo",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-          exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Fifa API",
+    link: "https://github.com/NeilAlvarezGarcia/fifa-api",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-          exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Task Manager",
+    link: "https://github.com/NeilAlvarezGarcia/task-manager",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-          exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Dog Facts",
+    link: "https://github.com/NeilAlvarezGarcia/dog-facts",
   },
 ];

@@ -27,7 +27,7 @@ const AboutImg = styled.picture`
   flex: 1;
 
   & img {
-    min-width: 100%;
+    width: 100%;
     border-radius: 2rem;
     box-shadow: -1rem 1rem 3rem ${COLORS.mainColor};
   }

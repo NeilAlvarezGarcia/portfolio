@@ -38,9 +38,7 @@ const Stack = forwardRef<Ref>((_, ref) => {
           <Card
             icon={<Code />}
             title='Front - End'
-            description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet quam nostrum
-                voluptates hic esse minus impedit quis dolores optio laudantium harum corrupti nisi
-                iste, repudiandae voluptatibus illo, suscipit delectus possimus.'
+            description='I have extensive experience working with technologies such as HTML5, CSS3, Javascript, Typescript, Reacts, and Git, which allows me to create dynamic and engaging user experiences, ensuring that the frontend development work is efficient, effective, and modern.'
             handleClick={() => {
               openModal();
               setProjects(frontendProjects);
@@ -50,9 +48,7 @@ const Stack = forwardRef<Ref>((_, ref) => {
           <Card
             icon={<Server />}
             title='Back - End'
-            description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet quam nostrum
-                voluptates hic esse minus impedit quis dolores optio laudantium harum corrupti nisi
-                iste, repudiandae voluptatibus illo, suscipit delectus possimus.'
+            description="I have extensive experience working with technologies such as Node.js, GraphQL, MongoDB, and MySQL, which allows me to create robust and efficient server-side applications, API's and databases, ensuring that the backend development work is efficient, effective, and fast load."
             handleClick={() => {
               openModal();
               setProjects(backendProjects);

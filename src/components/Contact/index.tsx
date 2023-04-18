@@ -30,9 +30,12 @@ const Contact = forwardRef<Ref>((_, ref) => {
             Contact <span>Me</span>
           </SubTitle>
           <P>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error harum minima, quo, ut
-            perferendis dolor ipsam repudiandae fugit doloribus atque quae possimus perspiciatis
-            quas? Velit nihil est ex totam alias?
+            If you believe that my skills and experience make me a good fit for the developer
+            position you're looking to fill, please don't hesitate to reach out to me. I'm always
+            happy to discuss potential projects and explore new opportunities. Whether you're
+            looking for a frontend, backend, or full-stack developer, I have the technical
+            expertise, attention to detail, and communication skills necessary to help your project
+            succeed.
           </P>
         </ContactContent>
 
@@ -54,7 +57,7 @@ const Contact = forwardRef<Ref>((_, ref) => {
       </ContactContainer>
 
       <Modal active={formOpen} close={() => setFormOpen(false)}>
-        <FormStyled />
+        <FormStyled active={formOpen} close={() => setFormOpen(false)} />
       </Modal>
     </Section>
   );

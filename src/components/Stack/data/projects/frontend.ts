@@ -1,38 +1,26 @@
 export const frontendProjects = [
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-        exercitationem deserunt minus nihil, enim eligendi a.`,
+    title: "Github Searcher",
     link: "https://github.com/NeilAlvarezGarcia/github-searcher",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-        exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Space Tech",
+    link: "https://github.com/NeilAlvarezGarcia/Space-tech",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-        exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Super Brain",
+    link: "https://github.com/NeilAlvarezGarcia/superBrain",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-        exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Dove",
+    link: "https://github.com/NeilAlvarezGarcia/Dove",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-        exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Greenrun Sports",
+    link: "https://github.com/NeilAlvarezGarcia/greenrun-sports",
   },
   {
-    title: "TodoApp",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dignissimos mollitia
-        exercitationem deserunt minus nihil, enim eligendi a.`,
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Todo App",
+    link: "https://github.com/NeilAlvarezGarcia/todoListApp",
   },
 ];

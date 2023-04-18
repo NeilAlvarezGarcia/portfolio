@@ -1,13 +1,25 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import { COLORS } from "@/styles/colors";
 import { Container } from "../styledComponents";
 import { FLEX_COLUMN, FLEX_ROW } from "@/styles/commonStyles";
-import { smScreen } from "@/styles/mediaQueries";
-import { downToUpMove } from "@/styles/animations";
+import { mdScreen, smScreen } from "@/styles/mediaQueries";
+
+const ArrowLogoAnimation = keyframes`
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+`;
 
 const FooterContainer = styled(Container)`
   ${FLEX_COLUMN}
+  gap: 3rem;
   flex-direction: column-reverse;
   align-items: center;
   text-align: center;
@@ -28,8 +40,15 @@ const FooterBtn = styled.button`
   cursor: pointer;
 
   &:hover svg {
-    animation: ${downToUpMove("15%")} 1s ease-in-out;
+    animation: ${ArrowLogoAnimation} 0.8s ease-out;
   }
 `;
 
-export { FooterBtn, FooterContainer };
+const CallBtn = styled.a`
+  ${FLEX_ROW}
+  font-size: 2rem;
+
+  ${mdScreen(`display: none`)}
+`;
+
+export { FooterBtn, FooterContainer, CallBtn };

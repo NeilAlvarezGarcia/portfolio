@@ -19,18 +19,18 @@ const upToDownMove = keyframes`
   }
 `;
 
-const downToUpMove = (pocentage = "5%") => keyframes`
+const HomeImageAnimation = keyframes`
   0% {
-    transform: translateY(${pocentage});
+    transform: translateY(5%);
   }
 
   50% {
-    transform: translateY(-${pocentage});
+    transform: translateY(-5%);
   }
 
   100% {
-    transform: translateY(${pocentage});
+    transform: translateY(5%);
   }
 `;
 
-export { appearing, upToDownMove, downToUpMove };
+export { appearing, upToDownMove, HomeImageAnimation };

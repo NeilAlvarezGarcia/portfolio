@@ -20,7 +20,7 @@ const LatestProjects: FC<Props> = ({ projects }) => {
 
       <LatestProjectsContainer>
         {projects?.map((project, i) => (
-          <ProjectCard content={project} image={bgImages[i]} />
+          <ProjectCard key={i} content={project} image={bgImages[i]} />
         ))}
       </LatestProjectsContainer>
     </LatestProjectsSection>

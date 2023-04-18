@@ -6,4 +6,5 @@ export const COLORS = {
   black: "#000",
   transparent: "transparent",
   green: "#25d366",
+  red: "#E84629",
 };

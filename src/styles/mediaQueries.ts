@@ -16,3 +16,9 @@ export const lgScreen = (styles: string) => setMediaQueryWidth("1024px", styles)
 export const xlScreen = (styles: string) => setMediaQueryWidth("1280px", styles);
 
 export const mediumHeightPhones = (styles: string) => setMediaQueryHeight("700px", styles);
+
+export const prefersReducedMotion = () => css`
+  @media (prefers-reduce-motion) {
+    transition: none;
+  }
+`;

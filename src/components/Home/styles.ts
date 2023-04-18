@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-import { lgScreen, mdScreen, setMediaQueryHeight } from "@/styles/mediaQueries";
+import {
+  lgScreen,
+  mdScreen,
+  prefersReducedMotion,
+  setMediaQueryHeight,
+} from "@/styles/mediaQueries";
 import { Container, SubTitle } from "../styledComponents";
 import { border, FLEX_COLUMN, FLEX_ROW, mainBtn, transition } from "@/styles/commonStyles";
 import { COLORS } from "@/styles/colors";
-import { appearing, downToUpMove, upToDownMove } from "@/styles/animations";
+import { appearing, HomeImageAnimation, upToDownMove } from "@/styles/animations";
 
 const Header = styled.header`
   ${FLEX_ROW}
@@ -25,6 +30,8 @@ const HomeSection = styled(Container)`
   @media (min-width: 768px) {
     ${setMediaQueryHeight("730px", "margin-top: 0")}
   }
+
+  ${prefersReducedMotion()}
 `;
 
 const HomeContent = styled.div`
@@ -32,11 +39,12 @@ const HomeContent = styled.div`
   ${FLEX_COLUMN}
   gap: 3rem;
   animation: ${upToDownMove} 3s;
+  ${prefersReducedMotion()}
 `;
 
 const HomeImage = styled.div`
   flex: 1;
-  animation: ${downToUpMove()} 3s infinite;
+  animation: ${HomeImageAnimation} 3s infinite;
 
   & img {
     box-shadow: 1rem 1rem 3rem ${COLORS.mainColor};

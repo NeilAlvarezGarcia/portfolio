@@ -28,8 +28,9 @@ const Home = () => {
           </HomeSubtitle>
         </div>
         <P>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore in, doloribus inventore
-          enim qui natus.
+          I’m currently working with technologies such as HTML5, CSS3, JavaScript, TypeScript,
+          React.js, Next.js, Node.js, GraphQL, MongoDB, MySQL, Docker, and Git. Additionally, I am
+          proficient in both English and Spanish.
         </P>
 
         <SocialMediaContainer>
