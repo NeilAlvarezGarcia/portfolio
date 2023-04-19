@@ -42,7 +42,7 @@ const Home = () => {
           </SocialMediaBtn>
         </SocialMediaContainer>
 
-        <CVBtn href='/NEILCV.pdf' target='_blank'>
+        <CVBtn href='/neilResume.pdf' target='_blank'>
           My CV
         </CVBtn>
       </HomeContent>

@@ -17,7 +17,7 @@ const About = forwardRef<Ref, Props>(({ changeSection }, ref) => {
     <Section bg={COLORS.secondBgColor} ref={ref}>
       <AboutContainer>
         <AboutImg>
-          <CustomeImage img='https://pps.whatsapp.net/v/t61.24694-24/315435945_132192446316455_3916711386734097490_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdQJw1QpaYjJBEAmW_XFXnGQ5krPV-fVTIP8Hx7Zy9IZBg&oe=6438589D' />
+          <CustomeImage img='https://scontent.fctg2-1.fna.fbcdn.net/v/t39.30808-6/300072186_3282368385422978_1647719255329765991_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHat-oyERSyUffmEuR8OPQgZPx3vCmrWG1k_He8KatYbRaka5MLIEZso_Msd_BAAzOpxlfZEPh4Mx2geQ7UUXHv&_nc_ohc=wLP_Qmhwxb8AX9SZD2y&_nc_ht=scontent.fctg2-1.fna&oh=00_AfD6GdU7jG9X2sI2dO8dAPNA0n8Uq_1Qy2b3D1keKak8rg&oe=64438FB1' />
         </AboutImg>
 
         <AboutContent>
