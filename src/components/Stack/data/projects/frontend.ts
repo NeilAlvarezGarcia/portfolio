@@ -16,8 +16,8 @@ export const frontendProjects = [
     link: "https://github.com/NeilAlvarezGarcia/Dove",
   },
   {
-    title: "Greenrun Sports",
-    link: "https://github.com/NeilAlvarezGarcia/greenrun-sports",
+    title: "Sports App",
+    link: "https://github.com/NeilAlvarezGarcia/Sports-App",
   },
   {
     title: "Todo App",

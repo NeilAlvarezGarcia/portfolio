@@ -1,10 +1,10 @@
 export const backendProjects = [
   {
-    title: "TodoApp",
-    link: "https://github.com/NeilAlvarezGarcia/github-searcher",
+    title: "Users Manager",
+    link: "https://github.com/NeilAlvarezGarcia/users-manager-crud",
   },
   {
-    title: "Users API",
+    title: "Node GraphQL",
     link: "https://github.com/NeilAlvarezGarcia/node-graphql",
   },
   {
@@ -20,7 +20,7 @@ export const backendProjects = [
     link: "https://github.com/NeilAlvarezGarcia/task-manager",
   },
   {
-    title: "Dog Facts",
-    link: "https://github.com/NeilAlvarezGarcia/dog-facts",
+    title: "Employees Manager",
+    link: "https://github.com/NeilAlvarezGarcia/employees-crud",
   },
 ];
