@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import Github from "@/icons/Github";
-import Linkedin from "@/icons/Linkedin";
+import Github from '@/icons/Github';
+import Linkedin from '@/icons/Linkedin';
 
-import CustomeImage from "../CustomeImage";
-import { P, Title } from "../styledComponents";
+import CustomeImage from '../CustomeImage';
+import { P, Title } from '../styledComponents';
 
 import {
   CVBtn,
@@ -14,7 +14,7 @@ import {
   HomeSubtitle,
   SocialMediaBtn,
   SocialMediaContainer,
-} from "./styles";
+} from './styles';
 
 const Home = () => {
   return (
@@ -42,7 +42,7 @@ const Home = () => {
           </SocialMediaBtn>
         </SocialMediaContainer>
 
-        <CVBtn href='/neilResume.pdf' target='_blank'>
+        <CVBtn href='/Neil_resume.pdf' target='_blank'>
           My CV
         </CVBtn>
       </HomeContent>
